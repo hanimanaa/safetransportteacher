@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "653832166056",
+    "firebase_url": "https://safetransportteacher.firebaseio.com",
+    "project_id": "safetransportteacher",
+    "storage_bucket": "safetransportteacher.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653832166056:android:e081260fa5227c6d",
+        "android_client_info": {
+          "package_name": "androiddevelopments.safetransportteacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653832166056-8e88a24h7jvoij44lpiuiecnb4qs4nrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-oYJWfq1RtMWM07_qsPJ2IlHWF7CP8QY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

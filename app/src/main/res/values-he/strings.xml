@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HaniApp</string>
+    <string name="login">כניסה</string>
+    <string name="username">שם משתמש</string>
+    <string name="password">סיסמה</string>
+</resources>

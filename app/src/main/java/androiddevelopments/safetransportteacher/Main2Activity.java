@@ -9,6 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,6 +35,9 @@ public class Main2Activity extends AppCompatActivity {
     Calendar calendar;
     SimpleDateFormat mdf;
 
+    Spinner spinner;
+    ArrayAdapter<CharSequence> classAdapter;
+
     List<Students> studentList = new ArrayList<>();
     StudentAdapter adapter;
     DatabaseReference ref;
@@ -44,11 +50,24 @@ public class Main2Activity extends AppCompatActivity {
         calendar= Calendar.getInstance();
         mdf = new SimpleDateFormat("dd / MM / yyyy");
         String strDate = "Current Date : " + mdf.format(calendar.getTime());
-
         TextView txView =(TextView)findViewById(R.id.date_view);
         txView.setText(strDate);
 
+        spinner=(Spinner)findViewById(R.id.sp);
+        classAdapter = ArrayAdapter.createFromResource(this,R.array.class_names,R.layout.support_simple_spinner_dropdown_item);
+        classAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        spinner.setAdapter(classAdapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(Main2Activity.this, parent.getItemAtPosition(position)+" selected", Toast.LENGTH_SHORT).show();
+            }
 
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         ref = database.getReference();

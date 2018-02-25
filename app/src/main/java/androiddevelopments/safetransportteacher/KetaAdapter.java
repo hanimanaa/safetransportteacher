@@ -52,6 +52,8 @@ public class KetaAdapter extends RecyclerView.Adapter<KetaAdapter.KetotHolder> {
         Intent intent =new Intent(context,StudentsActivity.class);
         intent.putExtra("className",ketaList.get(position));
         context.startActivity(intent);
+
+        
     }
 
     @Override

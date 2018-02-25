@@ -53,7 +53,7 @@ public class KetaAdapter extends RecyclerView.Adapter<KetaAdapter.KetotHolder> {
         intent.putExtra("className",ketaList.get(position));
         context.startActivity(intent);
 
-        
+
     }
 
     @Override

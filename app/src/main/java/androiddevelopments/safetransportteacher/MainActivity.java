@@ -38,4 +38,16 @@ public class MainActivity extends AppCompatActivity {
         in.putExtras(b);
         startActivity(in);
     }
+
+    public void b(View view){
+        EditText txtuser =(EditText)findViewById(R.id.edUser);
+        EditText txtpass =(EditText)findViewById(R.id.edPass);
+
+        Intent in =new Intent(this, KetaActivity.class);
+        Bundle  b=new Bundle();
+        b.putString("username",txtuser.getText().toString());
+        b.putString("password",txtpass.getText().toString());
+        in.putExtras(b);
+        startActivity(in);
+    }
 }

@@ -13,6 +13,7 @@
         <item>1004</item>
         <item>1005</item>
     </string-array>
+    <string name="title_activity_keta">KetaActivity</string>
 
 
 </resources>

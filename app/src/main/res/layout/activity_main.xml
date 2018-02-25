@@ -92,14 +92,25 @@
 
     <TextClock
         android:id="@+id/textClock"
-        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="75dp"
-        android:layout_marginStart="75dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="26dp"
-        app:layout_constraintEnd_toStartOf="@+id/edPass"
-        app:layout_constraintStart_toStartOf="@+id/button4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/edUser"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="75dp"
+        android:onClick="b"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
